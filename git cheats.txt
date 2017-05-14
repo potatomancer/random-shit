@@ -1,0 +1,28 @@
+git log - shows all commits for one repository
+git diff <old commit id> <new commit id> - shows line by line differences between commits
+git diff - shows differences between staging area and working directory, where your staging area is what your CURRENTLY WORKING ON (most recent commit, for example) and working directory is you having changed some shit in the files of the commit
+git diff --staged - shows differences between the current commit and what's in your staging area getting ready to BE committed
+git clone <github https path> - clones a git repository to your system
+git checkout <commit id> - changes files to the given commit id to check out a previous commit
+git checkout <branch name> - changes current branch to specified branch name
+git init - initializes a git repository in current directory.  No files associated/tracked
+git status - shows what files are in directory with git repository that are tracked and untracked
+git add <filename (case sensitive)> - adds file to repository in directory
+git commit -m "Commit message" - sets a commit with the given message.  Alternatively, "git commit" should just bring up sublime for me to type the message because of how I set git up.
+git reset --hard - discards changed made in either working directory OR staging area.  changes cannot be recovered
+git branch - shows branches of repository, with star by current branch
+git branch <branch name> - creates a new branch from current commit
+git branch -d <branch name> - deletes the label of the branch specified.  Useful is you merge two branches and don't need the label anymore because the commits are now accessible through the master branch
+git remote - lists remote repositories you have access to
+git remote add <ssh address from github like: "git@github.com:potatomancer/random-shit.git"> - adds repository from github
+git push <remote repository name> <branch to add to in repository> - updates remote repository branch with your locally created commits
+git merge <branch name> <branch name> - merges two branches into one 
+git show <commit id> - compares given commit with it's PARENT commit, not simply the commit that came before it
+
+
+
+sublime - I set it up to be opened with the command "subl" in Git
+
+helpful unix cmds:
+ls - lists files in current directory
+"ls -a" - includes hidden files
